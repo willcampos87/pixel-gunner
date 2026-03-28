@@ -1,5 +1,17 @@
 # Pixel Gunner — Project Instructions
 
+## Memory System
+
+**At the start of every session, read these files before doing any work:**
+- `memory/user.md` — who the user is and how they work
+- `memory/preferences.md` — coding and communication preferences
+- `memory/decisions.md` — key architectural and design decisions already made
+- `memory/people.md` — people involved in the project
+
+**At the end of every session (or when something significant changes), update the relevant memory files** to reflect new decisions, preferences, or context discovered during the session. Then commit and push the updates.
+
+---
+
 ## Git & GitHub Workflow
 
 **After every meaningful change, commit and push to GitHub. No exceptions.**

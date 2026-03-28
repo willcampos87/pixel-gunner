@@ -1,0 +1,8 @@
+"date","decision","reasoning","expected_outcome","review_date","status"
+"2026-03-27","Two-file architecture (index.html + game.js)","No build tools needed — opens via file:// in any browser","Game remains portable and easy to share forever","2026-04-26","PENDING"
+"2026-03-27","Vanilla JS + HTML5 Canvas (no framework)","Maximum portability, no dependency churn or version lock-in","Long-term maintainability without framework updates","2026-04-26","PENDING"
+"2026-03-27","480x270 internal resolution scaled via CSS","16:9 ratio at low res gives crisp pixel-art aesthetic on any monitor","Retro look maintained at all screen sizes","2026-04-26","PENDING"
+"2026-03-27","Circle-vs-circle collision (squared distance)","Simple and fast — avoids Math.sqrt in hot path","Good enough for top-down shooter, easy to tune radii","2026-04-26","PENDING"
+"2026-03-27","Bullet object pooling","Frequent bullet creation causes GC pressure and frame drops","Smooth framerate maintained even with many bullets","2026-04-26","PENDING"
+"2026-03-27","Git commit-and-push after every meaningful change","Easy rollback if a change breaks the game","Clear history, never lose progress","2026-04-26","PENDING"
+"2026-03-27","5-level wave structure with boss on level 5","Clear progression arc with difficulty loop after boss","Players have a goal and replayability after completion","2026-04-26","PENDING"

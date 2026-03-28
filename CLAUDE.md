@@ -10,6 +10,26 @@
 
 **At the end of every session (or when something significant changes), update the relevant memory files** to reflect new decisions, preferences, or context discovered during the session. Then commit and push the updates.
 
+## Decision Logging System
+
+When the user describes a meaningful decision, log it to `memory/decisions.csv` using:
+
+```bash
+bash scripts/log_decision.sh
+```
+
+Or append directly to the CSV with columns: `date, decision, reasoning, expected_outcome, review_date, status`
+- `review_date` = 30 days from `date`
+- `status` = `PENDING` (checker sets it to `REVIEW DUE` automatically)
+
+**Scripts:**
+- `scripts/log_decision.sh` — interactive prompt to add a new decision
+- `scripts/check_reviews.py` — run by cron at 9am daily; flags overdue rows as `REVIEW DUE`
+- `scripts/review.sh` — shows all `REVIEW DUE` items
+- `memory/review.log` — cron output log
+
+**Cron job** is installed and runs daily at 9:00am local time.
+
 ---
 
 ## Git & GitHub Workflow
